@@ -39,7 +39,7 @@ export default function HelloRotator() {
       key={current.lang}
       lang={current.lang}
       aria-live="off"
-      className="text-7xl sm:text-8xl md:text-9xl lg:text-[145px] font-normal tracking-tight text-zinc-900 leading-[1.1] mb-4 sm:mb-6 font-sans whitespace-nowrap min-h-[1.1em] animate-[hello-in_0.35s_ease-out]"
+      className="text-6xl xs:text-7xl sm:text-8xl md:text-9xl lg:text-[140px] xl:text-[145px] font-normal tracking-tight text-zinc-900 leading-[1.05] sm:leading-[1.1] mb-4 sm:mb-6 font-sans whitespace-nowrap min-h-[1.1em] animate-[hello-in_0.35s_ease-out]"
     >
       {current.text}
     </h1>

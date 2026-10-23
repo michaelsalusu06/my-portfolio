@@ -30,16 +30,16 @@ export default function Footer() {
         </p>
 
         {/* App Logos (Channels) - Mathematically Centered 3-Column Grid */}
-        <div className="max-w-md sm:max-w-lg mx-auto grid grid-cols-3 items-center">
+        <div className="max-w-xs sm:max-w-md md:max-w-lg mx-auto grid grid-cols-3 items-center gap-1 sm:gap-3">
           {/* GitHub: Centered in left column */}
           <div className="flex justify-center">
             <a
               href={personal.github || "https://github.com/michaelsalusu06"}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold text-zinc-900 hover:text-black transition-all duration-200 hover:-translate-y-0.5 group"
+              className="inline-flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm md:text-base font-semibold text-zinc-900 hover:text-black transition-all duration-200 hover:-translate-y-0.5 group"
             >
-              <GithubIcon className="w-5 h-5 text-zinc-900 group-hover:scale-110 transition-transform shrink-0" />
+              <GithubIcon className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-900 group-hover:scale-110 transition-transform shrink-0" />
               <span>GitHub</span>
             </a>
           </div>
@@ -50,9 +50,9 @@ export default function Footer() {
               href={personal.linkedin || "https://www.linkedin.com/in/michael-joseph-salusu-574935321/"}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold text-zinc-900 hover:text-black transition-all duration-200 hover:-translate-y-0.5 group"
+              className="inline-flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm md:text-base font-semibold text-zinc-900 hover:text-black transition-all duration-200 hover:-translate-y-0.5 group"
             >
-              <LinkedinIcon className="w-5 h-5 text-zinc-900 group-hover:scale-110 transition-transform shrink-0" />
+              <LinkedinIcon className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-900 group-hover:scale-110 transition-transform shrink-0" />
               <span>LinkedIn</span>
             </a>
           </div>
@@ -63,9 +63,9 @@ export default function Footer() {
               href={personal.whatsapp || "https://wa.me/"}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold text-zinc-900 hover:text-black transition-all duration-200 hover:-translate-y-0.5 group"
+              className="inline-flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm md:text-base font-semibold text-zinc-900 hover:text-black transition-all duration-200 hover:-translate-y-0.5 group"
             >
-              <WhatsappIcon className="w-5 h-5 text-zinc-900 group-hover:scale-110 transition-transform shrink-0" />
+              <WhatsappIcon className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-900 group-hover:scale-110 transition-transform shrink-0" />
               <span>WhatsApp</span>
             </a>
           </div>

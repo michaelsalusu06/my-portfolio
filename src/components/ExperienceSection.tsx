@@ -7,7 +7,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="relative bg-[#f3f3f3] border-t border-zinc-200 py-24 sm:py-32 px-6 sm:px-10 lg:px-16"
+      className="relative bg-[#f3f3f3] border-t border-zinc-200 py-24 sm:py-32 px-6 sm:px-10 lg:px-16 scroll-mt-20 sm:scroll-mt-24"
     >
       <div className="max-w-7xl mx-auto pl-0 lg:pl-12">
         {/* Section Header */}

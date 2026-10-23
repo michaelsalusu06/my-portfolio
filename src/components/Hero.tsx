@@ -2,6 +2,7 @@ import { portfolioData } from "@/data/portfolio";
 import HelloRotator from "@/components/HelloRotator";
 import HeroArt from "@/components/HeroArt";
 import { ArrowDown } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
   const { personal, heroStats } = portfolioData;
@@ -9,7 +10,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen bg-[#f3f3f3] flex flex-col justify-between pt-24 pb-8 sm:pt-28 sm:pb-12 px-6 sm:px-10 lg:px-16 overflow-hidden"
+      className="relative min-h-screen bg-[#f3f3f3] flex flex-col justify-between pt-20 sm:pt-24 lg:pt-28 pb-8 sm:pb-12 px-6 sm:px-10 lg:px-16 overflow-hidden"
     >
       <HeroArt />
 
@@ -27,9 +28,9 @@ export default function Hero() {
       {/* Main Content Grid: Left Content + Right Portrait */}
       <div className="max-w-7xl w-full mx-auto flex-1 flex flex-col lg:flex-row items-stretch lg:items-end justify-between relative pl-0 lg:pl-12">
         {/* Left Column: Stats + Big "Hello" + Tagline + Scroll */}
-        <div className="flex-1 flex flex-col justify-between z-10 pt-8 sm:pt-12 lg:pt-16 pb-8 lg:pb-12 max-w-2xl">
+        <div className="flex-1 flex flex-col justify-between z-10 pt-6 sm:pt-10 lg:pt-16 pb-8 lg:pb-12 max-w-2xl">
           {/* Top Left Stats (e.g. +200 Project completed, +50 Startup raised) */}
-          <div className="flex items-start gap-12 sm:gap-16 mb-12 sm:mb-20">
+          <div className="flex items-start gap-8 sm:gap-12 md:gap-16 mb-8 sm:mb-14 lg:mb-20">
             {heroStats.map((stat, idx) => (
               <div key={idx} className="flex flex-col">
                 <span className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-zinc-900">
@@ -43,15 +44,29 @@ export default function Hero() {
           </div>
 
           {/* Center Left: Massive "Hello" Heading (cycles through languages) */}
-          <div className="my-auto lg:my-0 pb-12 sm:pb-16">
+          <div className="my-auto lg:my-0 pb-6 sm:pb-10 lg:pb-16">
             <HelloRotator />
             <p className="text-base sm:text-lg md:text-xl font-normal text-zinc-700 tracking-tight flex items-center gap-2">
               <span>{personal.taglineHero || "— It's Michael, a CS Student & Software Engineer"}</span>
             </p>
+
+            {/* Mobile-only Chill Bear illustration */}
+            <div className="md:hidden flex justify-center py-4 my-2">
+              <div className="relative w-40 h-40 sm:w-48 sm:h-48 aspect-square select-none pointer-events-none">
+                <Image
+                  src="/chill-bear.png"
+                  alt="Chill Bear Doodle"
+                  fill
+                  priority
+                  sizes="(max-width: 640px) 160px, 192px"
+                  className="object-contain"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Bottom Left: Scroll down indicator */}
-          <div className="pt-4">
+          <div className="pt-2 sm:pt-4">
             <a
               href="#about-me"
               className="inline-flex items-center gap-2 text-xs sm:text-sm font-normal text-zinc-600 hover:text-black transition-colors group"

@@ -29,7 +29,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="py-24 sm:py-32 bg-[#f3f3f3] border-t border-zinc-200 relative"
+      className="py-24 sm:py-32 bg-[#f3f3f3] border-t border-zinc-200 relative scroll-mt-20 sm:scroll-mt-24"
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
         {/* Section Header: Just "Projects", no top pill */}
@@ -99,7 +99,7 @@ export default function ProjectsSection() {
         >
           {/* Modal Container Card */}
           <div
-            className="relative bg-[#eaeaea] border border-zinc-300/80 rounded-3xl p-6 sm:p-10 md:p-12 max-w-2xl lg:max-w-3xl w-full shadow-2xl my-auto animate-in zoom-in-95 duration-200"
+            className="relative bg-[#eaeaea] border border-zinc-300/80 rounded-3xl p-6 sm:p-10 md:p-12 max-w-2xl lg:max-w-3xl w-full shadow-2xl my-auto animate-in zoom-in-95 duration-200 max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
