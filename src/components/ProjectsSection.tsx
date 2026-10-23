@@ -31,7 +31,7 @@ export default function ProjectsSection() {
       id="projects"
       className="py-16 sm:py-24 lg:py-32 bg-[#f3f3f3] border-t border-zinc-200 relative scroll-mt-20 sm:scroll-mt-24"
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+      <div className="max-w-[1440px] 2xl:max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-16">
         {/* Section Header: Just "Projects", no top pill */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-zinc-900">

@@ -9,7 +9,7 @@ export default function ExperienceSection() {
       id="experience"
       className="relative bg-[#f3f3f3] border-t border-zinc-200 py-16 sm:py-24 lg:py-32 px-6 sm:px-10 lg:px-16 scroll-mt-20 sm:scroll-mt-24"
     >
-      <div className="max-w-7xl mx-auto pl-0 lg:pl-12">
+      <div className="max-w-[1440px] 2xl:max-w-[1680px] mx-auto pl-0 lg:pl-12">
         {/* Section Header */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start mb-12 sm:mb-20">
           {/* Left Column: Eyebrow + Heading */}

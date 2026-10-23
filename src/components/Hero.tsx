@@ -12,31 +12,31 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen bg-[#f3f3f3] flex flex-col justify-between pt-20 sm:pt-24 lg:pt-28 pb-8 sm:pb-12 px-6 sm:px-10 lg:px-16 overflow-hidden"
     >
-      <HeroArt />
+      {/* Unified Responsive Container for Rail, Content, and Bear */}
+      <div className="max-w-[1440px] 2xl:max-w-[1680px] w-full mx-auto flex-1 flex flex-col lg:flex-row items-stretch justify-between relative pl-0 lg:pl-12">
+        <HeroArt />
 
-      {/* Left Rail: role, thin line, year (all reading bottom-to-top) */}
-      <div className="hidden lg:flex absolute left-8 sm:left-12 top-32 bottom-12 flex-col items-center gap-4 text-[13px] font-normal text-zinc-400 select-none z-10">
-        <span className="vertical-lr tracking-wide">
-          {personal.railRole || "Software Engineer"}
-        </span>
-        <div className="flex-1 w-px bg-zinc-300" aria-hidden="true" />
-        <span className="vertical-lr tracking-wide">
-          {personal.railYear || "2026"}
-        </span>
-      </div>
+        {/* Left Rail: role, thin line, year (all reading bottom-to-top) */}
+        <div className="hidden lg:flex absolute left-0 top-6 bottom-6 flex-col items-center gap-4 text-[13px] 2xl:text-sm font-normal text-zinc-400 select-none z-10">
+          <span className="vertical-lr tracking-wide">
+            {personal.railRole || "Software Engineer"}
+          </span>
+          <div className="flex-1 w-px bg-zinc-300" aria-hidden="true" />
+          <span className="vertical-lr tracking-wide">
+            {personal.railYear || "2026"}
+          </span>
+        </div>
 
-      {/* Main Content Grid: Left Content + Right Portrait */}
-      <div className="max-w-7xl w-full mx-auto flex-1 flex flex-col lg:flex-row items-stretch lg:items-end justify-between relative pl-0 lg:pl-12">
         {/* Left Column: Stats + Big "Hello" + Tagline + Scroll */}
-        <div className="flex-1 flex flex-col justify-between z-10 pt-6 sm:pt-10 lg:pt-16 pb-6 sm:pb-8 lg:pb-12 md:max-w-[55%] lg:max-w-[56%] xl:max-w-2xl">
-          {/* Top Left Stats (e.g. +200 Project completed, +50 Startup raised) */}
-          <div className="flex items-start gap-8 sm:gap-12 md:gap-14 lg:gap-16 mb-8 sm:mb-12 lg:mb-20">
+        <div className="flex-1 flex flex-col justify-between z-10 pt-6 sm:pt-8 lg:pt-6 pb-4 sm:pb-6 lg:pb-6 md:max-w-[55%] lg:max-w-[56%] xl:max-w-2xl 2xl:max-w-3xl">
+          {/* Top Left Stats (e.g. 20 Certificates, 9 Technologies) */}
+          <div className="flex items-start gap-8 sm:gap-12 md:gap-14 lg:gap-16 mb-8 sm:mb-10 lg:mb-12">
             {heroStats.map((stat, idx) => (
               <div key={idx} className="flex flex-col">
-                <span className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-zinc-900">
+                <span className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-light tracking-tight text-zinc-900">
                   {stat.number}
                 </span>
-                <span className="text-xs sm:text-sm font-normal text-zinc-500 mt-1">
+                <span className="text-xs sm:text-sm 2xl:text-base font-normal text-zinc-500 mt-1">
                   {stat.label}
                 </span>
               </div>
@@ -44,9 +44,9 @@ export default function Hero() {
           </div>
 
           {/* Center Left: Massive "Hello" Heading (cycles through languages) */}
-          <div className="my-auto lg:my-0 pb-6 sm:pb-10 lg:pb-16">
+          <div className="my-auto py-4 sm:py-6 lg:py-8">
             <HelloRotator />
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal text-zinc-700 tracking-tight flex items-center gap-2">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl font-normal text-zinc-700 tracking-tight flex items-center gap-2">
               <span>{personal.taglineHero || "— It's Michael, a CS Student & Software Engineer"}</span>
             </p>
 
@@ -69,10 +69,10 @@ export default function Hero() {
           <div className="pt-2 sm:pt-4">
             <a
               href="#about-me"
-              className="inline-flex items-center gap-2 text-xs sm:text-sm font-normal text-zinc-600 hover:text-black transition-colors group"
+              className="inline-flex items-center gap-2 text-xs sm:text-sm 2xl:text-base font-normal text-zinc-600 hover:text-black transition-colors group"
             >
               <span>Scroll down</span>
-              <ArrowDown className="w-3.5 h-3.5 text-zinc-500 group-hover:translate-y-0.5 transition-transform" />
+              <ArrowDown className="w-3.5 h-3.5 2xl:w-4 2xl:h-4 text-zinc-500 group-hover:translate-y-0.5 transition-transform" />
             </a>
           </div>
         </div>

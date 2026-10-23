@@ -68,7 +68,7 @@ export default function SkillsSection() {
       id="skills"
       className="relative bg-[#f3f3f3] border-t border-zinc-200 py-16 sm:py-24 lg:py-32 px-6 sm:px-10 lg:px-16 scroll-mt-20 sm:scroll-mt-24"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1440px] 2xl:max-w-[1680px] mx-auto pl-0 lg:pl-12">
         {/* Section Header */}
         <div className="mb-12 sm:mb-16">
           <div className="flex items-center gap-2 text-sm text-zinc-900 font-medium mb-3">

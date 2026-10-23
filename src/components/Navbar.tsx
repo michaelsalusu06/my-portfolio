@@ -78,7 +78,7 @@ export default function Navbar() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-40 bg-[#f3f3f3]/90 backdrop-blur-md transition-all py-4 sm:py-5 md:py-6 lg:py-8">
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 flex items-center justify-between">
+        <div className="max-w-[1440px] 2xl:max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-16 flex items-center justify-between">
           {/* Spacer keeps the nav links centered */}
           <div className="hidden lg:block w-24" aria-hidden="true" />
 
