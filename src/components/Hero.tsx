@@ -28,9 +28,9 @@ export default function Hero() {
       {/* Main Content Grid: Left Content + Right Portrait */}
       <div className="max-w-7xl w-full mx-auto flex-1 flex flex-col lg:flex-row items-stretch lg:items-end justify-between relative pl-0 lg:pl-12">
         {/* Left Column: Stats + Big "Hello" + Tagline + Scroll */}
-        <div className="flex-1 flex flex-col justify-between z-10 pt-6 sm:pt-10 lg:pt-16 pb-8 lg:pb-12 max-w-2xl">
+        <div className="flex-1 flex flex-col justify-between z-10 pt-6 sm:pt-10 lg:pt-16 pb-6 sm:pb-8 lg:pb-12 md:max-w-[55%] lg:max-w-[56%] xl:max-w-2xl">
           {/* Top Left Stats (e.g. +200 Project completed, +50 Startup raised) */}
-          <div className="flex items-start gap-8 sm:gap-12 md:gap-16 mb-8 sm:mb-14 lg:mb-20">
+          <div className="flex items-start gap-8 sm:gap-12 md:gap-14 lg:gap-16 mb-8 sm:mb-12 lg:mb-20">
             {heroStats.map((stat, idx) => (
               <div key={idx} className="flex flex-col">
                 <span className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-zinc-900">
@@ -46,7 +46,7 @@ export default function Hero() {
           {/* Center Left: Massive "Hello" Heading (cycles through languages) */}
           <div className="my-auto lg:my-0 pb-6 sm:pb-10 lg:pb-16">
             <HelloRotator />
-            <p className="text-base sm:text-lg md:text-xl font-normal text-zinc-700 tracking-tight flex items-center gap-2">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal text-zinc-700 tracking-tight flex items-center gap-2">
               <span>{personal.taglineHero || "— It's Michael, a CS Student & Software Engineer"}</span>
             </p>
 

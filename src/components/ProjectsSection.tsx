@@ -29,7 +29,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="py-24 sm:py-32 bg-[#f3f3f3] border-t border-zinc-200 relative scroll-mt-20 sm:scroll-mt-24"
+      className="py-16 sm:py-24 lg:py-32 bg-[#f3f3f3] border-t border-zinc-200 relative scroll-mt-20 sm:scroll-mt-24"
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
         {/* Section Header: Just "Projects", no top pill */}
@@ -112,7 +112,7 @@ export default function ProjectsSection() {
             </button>
 
             {/* Project Title */}
-            <h3 className="text-3xl sm:text-4xl font-normal tracking-tight text-zinc-900 mb-8 pr-12">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight text-zinc-900 mb-6 sm:mb-8 pr-12">
               {selectedProject.title}
             </h3>
 
@@ -151,7 +151,7 @@ export default function ProjectsSection() {
             </div>
 
             {/* Modal Footer Action: View Details linked to GitHub */}
-            <div className="mt-8 pt-6 border-t border-zinc-300/80 flex items-center justify-between">
+            <div className="mt-8 pt-6 border-t border-zinc-300/80 flex flex-wrap items-center justify-between gap-3">
               <a
                 href={selectedProject.githubUrl || "https://github.com/michaelsalusu06"}
                 target="_blank"

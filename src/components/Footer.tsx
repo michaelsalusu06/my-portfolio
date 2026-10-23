@@ -18,7 +18,7 @@ export default function Footer() {
         </span>
 
         {/* Title */}
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-zinc-900 leading-[1.15] mb-4 sm:mb-5">
+        <h2 className="text-3xl sm:text-5xl md:text-6xl font-normal tracking-tight text-zinc-900 leading-[1.15] mb-4 sm:mb-5">
           Let&apos;s Build Something Together
         </h2>
 

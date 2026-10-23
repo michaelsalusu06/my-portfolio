@@ -80,10 +80,10 @@ export default function Navbar() {
       <header className="fixed top-0 left-0 right-0 z-40 bg-[#f3f3f3]/90 backdrop-blur-md transition-all py-4 sm:py-5 md:py-6 lg:py-8">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 flex items-center justify-between">
           {/* Spacer keeps the nav links centered */}
-          <div className="hidden md:block w-24" aria-hidden="true" />
+          <div className="hidden lg:block w-24" aria-hidden="true" />
 
           {/* Center-Left: Navigation links */}
-          <nav className="hidden md:flex items-center gap-1 sm:gap-2 text-[15px]">
+          <nav className="hidden md:flex items-center gap-1 lg:gap-2 text-sm lg:text-[15px]">
             {navLinks.map((link) => {
               const isActive = activeSection === link.id;
               return (
@@ -91,7 +91,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => handleLinkClick(link.id)}
-                  className={`px-4 py-1.5 rounded-full transition-all duration-200 ${
+                  className={`px-3.5 lg:px-4 py-1.5 rounded-full transition-all duration-200 whitespace-nowrap ${
                     isActive
                       ? "bg-black text-white font-medium border border-black shadow-xs"
                       : "border border-transparent text-zinc-600 hover:text-black"
@@ -107,7 +107,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center">
             <a
               href="#contact"
-              className="inline-flex items-center gap-1.5 text-[15px] font-medium text-zinc-900 hover:text-black group border-b border-zinc-900 pb-0.5 transition-all"
+              className="inline-flex items-center gap-1.5 text-sm lg:text-[15px] font-medium text-zinc-900 hover:text-black group border-b border-zinc-900 pb-0.5 transition-all whitespace-nowrap"
             >
               <span>Contact Me</span>
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -118,7 +118,7 @@ export default function Navbar() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation"
-            className="md:hidden p-2 text-zinc-800 hover:text-black"
+            className="md:hidden ml-auto p-2 -mr-2 text-zinc-800 hover:text-black"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>

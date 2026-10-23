@@ -7,11 +7,11 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="relative bg-[#f3f3f3] border-t border-zinc-200 py-24 sm:py-32 px-6 sm:px-10 lg:px-16 scroll-mt-20 sm:scroll-mt-24"
+      className="relative bg-[#f3f3f3] border-t border-zinc-200 py-16 sm:py-24 lg:py-32 px-6 sm:px-10 lg:px-16 scroll-mt-20 sm:scroll-mt-24"
     >
       <div className="max-w-7xl mx-auto pl-0 lg:pl-12">
         {/* Section Header */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start mb-14 sm:mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start mb-12 sm:mb-20">
           {/* Left Column: Eyebrow + Heading */}
           <div>
             <div className="flex items-center gap-2 text-sm text-zinc-900 font-medium mb-4">
@@ -48,10 +48,10 @@ export default function ExperienceSection() {
           {experience.map((item, idx) => (
             <div
               key={idx}
-              className="py-8 sm:py-10 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start md:items-center"
+              className="py-7 sm:py-10 grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-start lg:items-center"
             >
               {/* Left: Organization / Company & Location + Period */}
-              <div className="md:col-span-5 lg:col-span-4">
+              <div className="lg:col-span-4">
                 <h3 className="text-base sm:text-lg font-medium text-zinc-900 tracking-tight">
                   {item.company}
                 </h3>
@@ -62,18 +62,18 @@ export default function ExperienceSection() {
               </div>
 
               {/* Center: Role & Summary */}
-              <div className="md:col-span-4 lg:col-span-5">
-                <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed font-normal max-w-md">
+              <div className="lg:col-span-4">
+                <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed font-normal max-w-xl lg:max-w-md">
                   {item.summary}
                 </p>
               </div>
 
               {/* Right: Pill Tags */}
-              <div className="md:col-span-3 lg:col-span-3 flex md:justify-end items-center gap-2 flex-wrap pt-2 md:pt-0">
+              <div className="lg:col-span-4 flex lg:justify-end items-center gap-2 flex-wrap pt-1 lg:pt-0">
                 {item.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full px-4 py-1.5 text-xs text-zinc-700 bg-zinc-200/75 hover:bg-black hover:text-white transition-all duration-200 font-normal whitespace-nowrap cursor-default"
+                    className="rounded-full px-3.5 sm:px-4 py-1.5 text-xs text-zinc-700 bg-zinc-200/75 hover:bg-black hover:text-white transition-all duration-200 font-normal whitespace-nowrap cursor-default"
                   >
                     {tag}
                   </span>
